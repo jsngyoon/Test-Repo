@@ -22,7 +22,7 @@ void qsort(int *arr, int left, int right) {
 
 	while(1) {
 		while((arr[left] < pivot) && (left <= end)) left++;
-		while((pivot < arr[right]) && (right > start)) right--;
+		while((pivot <= arr[right]) && (right > start)) right--;
 		if(right > left) swap(arr, left, right);
 		else {
 			swap(arr, start, right);
